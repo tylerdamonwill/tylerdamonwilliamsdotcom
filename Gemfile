@@ -1,7 +1,9 @@
 source 'https://rubygems.org'
 
 #rails server -b $IP -p $PORT - run code
-
+#git add .
+#git commit -a -m "Pick Up Add"
+#git push heroku master
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 # Use sqlite3 as the database for Active Record
