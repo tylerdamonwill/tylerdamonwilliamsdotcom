@@ -4,5 +4,9 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   def hello
   render html: "hello, world!"
-end
+  end
+
+  def readpdf
+  send_file(Rails.root.join("public", "assets", "Resume.pdf").to_s, :disposition => "inline", :type => "application/pdf")
+  end
 end
