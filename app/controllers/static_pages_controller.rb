@@ -1,4 +1,10 @@
 class StaticPagesController < ApplicationController
-  def home
+  def about
+  end
+
+  def csprojects
+  end
+
+  def videoprojects
   end
 end
