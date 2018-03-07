@@ -33,7 +33,7 @@ body, html {
     <div class="w3-right w3-hide-small">
       <a href="/static_pages/about" class="w3-bar-item w3-button">ABOUT</a>
       <a href="/static_pages/csprojects" class="w3-bar-item w3-button">CS PROJECTS</a>
-      <a <%= link_to "RESUME", asset_path "/Resume.pdf" , :target => "_blank" %> </a>
+      <% link_to 'Download the resume', asset_path 'Resume.pdf' %>
       <a href="/static_pages/videoprojects" class="w3-bar-item w3-button">VIDEO PROJECTS</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
