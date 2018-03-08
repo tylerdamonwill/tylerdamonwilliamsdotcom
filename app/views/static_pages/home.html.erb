@@ -71,8 +71,8 @@ body, html {
   <div class="w3-row-padding" style="margin-top:64px">
     <div class="w3-half">
       <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Grinnell, IA</p>
-      <p style="text-decoration: none;"><a href="tel:225-716-1681"><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +1 2257161681</a></p>
-      <p style="text-decoration: none;"><a href="mailto:williams13@grinnell.edu?Subject=Hello%20Tyler" target="_top"><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"></i>Send Mail</a></p>
+      <p><a style="text-decoration: none;" href="tel:225-716-1681"><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +1 2257161681</a></p>
+      <p><a style="text-decoration: none;" href="mailto:williams13@grinnell.edu?Subject=Hello%20Tyler" target="_top"><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"></i>Send Mail</a></p>
       <br>
     </div>
     <div class="w3-half">
@@ -99,10 +99,10 @@ body, html {
 <script>
 function myMap()
 {
-  myCenter=new google.maps.LatLng(41.7505606,-92.7220605);
+  myCenter=new google.maps.LatLng(41.7494720,-92.7199040);
   var mapOptions= {
     center:myCenter,
-    zoom:16
+    zoom:16, scrollwheel: false, draggable: false,
     mapTypeId:google.maps.MapTypeId.ROADMAP
   };
   var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
