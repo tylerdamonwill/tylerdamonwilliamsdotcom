@@ -97,10 +97,10 @@ body, html {
  
 <!-- Add Google Maps -->
 <script>
-function myMap()
-{
-  myCenter=new google.maps.LatLng(41.7494720,-92.7199040);
-  var mapOptions= {
+function myMap() {
+var mapProp= {
+    myCenter=new google.maps.LatLng(41.7494720,-92.7199040);
+var mapOptions= {
     center:myCenter,
     zoom:12, scrollwheel: false, draggable: false,
     mapTypeId:google.maps.MapTypeId.ROADMAP
@@ -111,8 +111,6 @@ function myMap()
     position: myCenter,
   });
   marker.setMap(map);
-}
-var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
 }
 
 // Modal Image Gallery
