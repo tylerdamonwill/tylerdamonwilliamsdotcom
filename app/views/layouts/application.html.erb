@@ -5,12 +5,13 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= favicon_link_tag 'favicon.ico' %>
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
+  <% %w(57 60 72 76 114 120 144 152 180).each do |s| %>
+  <%= favicon_link_tag "apple-touch-icon-#{s}x#{s}.png", rel: 'apple-touch-icon', type: 'image/png', sizes: "#{s}x#{s}" %>
+  <% end %>
+
+  <% %w(16 32).each do |s| %>
+  <%= favicon_link_tag "favicon-#{s}x#{s}.png", rel: 'icon', type: 'image/png', sizes: "#{s}x#{s}" %>
+  <% end %>
   <%= csrf_meta_tags %>
 </head>
 <body>
