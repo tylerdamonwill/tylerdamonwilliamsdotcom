@@ -5,14 +5,8 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= favicon_link_tag 'favicon.ico' %>
-  <% %w(57 60 72 76 114 120 144 152 180).each do |s| %>
-  <%= favicon_link_tag "apple-touch-icon-#{s}x#{s}.png", rel: 'apple-touch-icon', type: 'image/png', sizes: "#{s}x#{s}" %>
-  <% end %>
-
-  <% %w(16 32).each do |s| %>
-  <%= favicon_link_tag "favicon-#{s}x#{s}.png", rel: 'icon', type: 'image/png', sizes: "#{s}x#{s}" %>
-  <% end %>
-  <%= csrf_meta_tags %>
+  <%= favicon_link_tag "apple-touch-icon.png", rel: 'apple-touch-icon', type: 'image/png' %>
+  <%= favicon_link_tag "apple-chrome-192-192.png", rel: 'apple-touch-icon', type: 'image/png' %>
 </head>
 <body>
 
