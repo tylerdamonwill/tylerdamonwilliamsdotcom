@@ -1,6 +1,6 @@
 {
     "master_picture": "app/assets/images/Tyler.png",
-    "favicon_design": {
+        "favicon_design": {
         "ios": {
             "picture_aspect": "no_change",
             "assets": {
@@ -43,7 +43,7 @@
         },
         "safari_pinned_tab": {
             "picture_aspect": "black_and_white",
-            "threshold": 50,
+            "threshold": 40,
             "theme_color": "#0000000"
         }
     },
