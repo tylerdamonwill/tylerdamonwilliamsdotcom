@@ -7,4 +7,7 @@ class StaticPagesController < ApplicationController
 
   def videoprojects
   end
+  
+  def blog
+  end
 end
