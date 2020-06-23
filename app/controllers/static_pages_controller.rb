@@ -1,4 +1,4 @@
 class StaticPagesController < ApplicationController
-  def blog
+  def video
   end
 end

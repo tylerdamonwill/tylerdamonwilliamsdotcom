@@ -1,8 +1,8 @@
 require 'test_helper'
 
 class StaticPagesControllerTest < ActionDispatch::IntegrationTest
-  test "should get blog" do
-    get static_pages_blog_url
+  test "should get video" do
+    get static_pages_video_url
     assert_response :success
   end
 
