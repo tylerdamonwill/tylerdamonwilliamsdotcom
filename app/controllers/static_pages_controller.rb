@@ -1,4 +1,4 @@
 class StaticPagesController < ApplicationController
-  def video
+  def ytvideo
   end
 end

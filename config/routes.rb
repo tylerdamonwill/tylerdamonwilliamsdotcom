@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'static_pages/ytvideo'
+
   get 'static_pages/video'
 
   get 'static_pages/blog'
